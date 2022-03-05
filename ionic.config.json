@@ -1,0 +1,7 @@
+{
+  "name": "Xonia",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
