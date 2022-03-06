@@ -1,7 +1,8 @@
 import { Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import Login from './pages/login/page';
+import Index from './pages/index/page';
+import SignIn from './pages/signin/page';
 
 // Core CSS required for Ionic components to work properly
 import '@ionic/react/css/core.css';
@@ -29,7 +30,10 @@ const EntryPoint: React.FC = () => (
     <IonReactRouter>
       <IonRouterOutlet>
         <Route exact path="/">
-          <Login />
+          <Index />
+        </Route>
+        <Route path="/pages/signin">
+          <SignIn />
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>

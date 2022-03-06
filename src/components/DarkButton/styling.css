@@ -1,0 +1,16 @@
+.dark-button {
+    font-size: 21px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #353840;
+}
+
+.dark-button:hover {
+    background-color: #616366;
+    cursor: pointer;
+}
+
+.dark-button:active {
+    background-color: #2e2f32;
+}
