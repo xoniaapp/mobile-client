@@ -1,31 +1,29 @@
+// UI related stuff
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import DarkButton from '../../components/DarkButton/component';
-import GreenButton from '../../components/RedButton/component';
+import Button from '../../components/Button/component';
 import Seperator from '../../components/Seperator/component';
+import Text from '../../components/Text/component';
 import './styling.css';
+import '../../globalClasses.css';
 
-function signup() {
-  window.location.href = '/pages/signup';
-}
+function signup() { window.location.href = '/pages/signup'; }
 
-function signin() {
-  window.location.href = '/pages/signin';
-}
+function signin() { window.location.href = '/pages/signin'; }
 
 const Index: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle><p className="centered">Xonia</p></IonTitle>
+          <IonTitle><Text className="centered" text="Xonia" /></IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
         <div className="centered">
           <img src={`${process.env.PUBLIC_URL}/assets/img/mainlogo.png`} alt="" />
-          <DarkButton text="Sign up" onClick={signup} />
+          <Button color="dark" text="Sign up" onClick={signup} />
           <Seperator size="4" />
-          <GreenButton text="Sign in" onClick={signin} />
+          <Button color="red" text="Sign in" onClick={signin} />
         </div>
       </IonContent>
     </IonPage>

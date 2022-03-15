@@ -1,0 +1,35 @@
+.dark-button {
+    font-size: 21px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #353840;
+    transition: 0.2s;
+}
+
+.dark-button:hover {
+    background-color: #616366;
+    cursor: pointer;
+}
+
+.dark-button:active {
+    background-color: #2e2f32;
+}
+
+.red-button {
+    font-size: 21px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #b53a3a;
+    transition: 0.2s;
+}
+
+.red-button:hover {
+    background-color: #cf3e3e;
+    cursor: pointer;
+}
+
+.red-button:active {
+    background-color: #6b3c3c;
+}

@@ -1,8 +1,7 @@
-import './styling.css';
-
 function Seperator(props: any) {
+  const styleAttribute = {fontSize: `${props.size}px`};
   return (
-    <p className={`seperator ${props.size.replace('1', 'one').replace('2', 'two').replace('3', 'three').replace('4', 'four').replace('5', 'five').replace('6', 'six').replace('7', 'seven').replace('8', 'eight')}`}>&nbsp;</p>
+    <p style={styleAttribute}>&nbsp;</p>
   );
 }
 

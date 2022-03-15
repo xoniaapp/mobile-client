@@ -1,0 +1,6 @@
+{
+	"appId": "com.xoniaapp",
+	"appName": "Xonia",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}
